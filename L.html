@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>AINA LIYANA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type = "text/javascript">
+  </script>
+<style>
+
+body {
+  background-image: url('https://images.squarespace-cdn.com/content/v1/57bb61d3579fb3293e64fe78/1592357962665-03I2SX46YISJNQ0Q9HIH/Website+Background+%283%29.png?format=2500w');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+
+h1 {text-align: center;}
+p {text-align: center;}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #CB8AFF;
+  color: white;
+}
+
+
+.button {
+  background-color: #89CFF0;
+  border: none;
+  color: black;
+  padding: 10px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+footer {
+     position: relative;
+     height: 80px;
+     width: 100%;
+     background-color: #333333;
+    }
+
+    p.copyright {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        line-height: 40px;
+        font-size: 0.8em;
+        text-align: center;
+        bottom:0;
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="file:///C:/Users/user/OneDrive/Desktop/A.html">Home</a>
+    <a href="file:///C:/Users/user/OneDrive/Desktop/N.html">About</a>
+  <a class="active" href="file:///C:/Users/user/OneDrive/Desktop/L.html">Contact</a>
+</div>
+
+<h1 style="font-family: cursive;"><b>Contact</b></h1>
+
+<form style="text-align: center;" action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+          Name
+          <input type = "text" name = "Name" />
+          <br>
+
+          <p> Email
+          <input type = "text" name = "Email" />
+          </p>
+
+          <br>
+              State
+               <select name="State">
+               <option value = "-1" selected>[choose yours]</option>
+               <option value = "1">Johor</option>
+               <option value = "2">Kedah</option>
+               <option value = "3">Kelantan</option>
+               <option value = "4">Melaka</option>
+               <option value = "5">Pahang</option>
+               <option value = "6">Perak</option>
+               <option value = "7">Perlis</option>
+               <option value = "8">Pulau Pinang</option>
+               </select>
+          <br>
+          <p>Did you enjoy my website?
+          <br>
+               <input type="radio" name="Enjoy" value="Yes">Yes<br>
+               <input type="radio" name="Enjoy" value= "No">No<br>
+               <input type="radio" name="Enjoy" value= "Maybe">Maybe
+          </p>
+     
+         
+       
+          <p>
+          Leave some message!<br> <textarea name="message" rows="4" cols="40"></textarea><br>
+          </p>
+          <p><input type="checkbox" required name="terms">I have read and accept <a href="https://www.surveymonkey.com/mp/legal/terms-of-use/" target="_blank">Terms and Conditions</a></p>            
+
+          <input type = "submit" class="button" name="submit" value = "Submit">
+          <input type="reset" class="button" name="reset" value="Reset"></p>
+         </table>
+</form>
+
+<script type = "text/javascript">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.Name.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+         if( document.myForm.Email.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.Email.focus() ;
+            return false;
+         }
+       
+         if( document.myForm.State.value == "-1" ) {
+            alert( "Please provide your State!" );
+            return false;
+         }
+
+         if( document.myForm.Enjoy.value == "" ) {
+            alert( "Please let me know if you are enjoy my website or not!" );
+            return false;
+         }
+         
+         if( document.myForm.message.value == "" ) {
+            alert( "Please leave some mesaage or some sweet words! Thankyou [: " );
+            return false;
+         }
+         return( true );
+      }
+
+   //-->
+</script>
+
+
+<footer>
+    <p class="copyright">© 2022 Aina Liyana</p>
+</footer>
+
+</body>
+</html>
